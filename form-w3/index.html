@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+         * {
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+
+
+        body {
+            background: linear-gradient(to top, red, orange);
+        }
+
+
+        #entrar {
+            height: 20px;
+            width: 60px;
+            background-color: orange;
+            border: none;
+            font-family: Arial, Helvetica, sans-serif;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+
+
+
+        .center {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: auto;
+            margin-top: 20vh;
+            height: 70vh;
+            max-width: 80vw;
+            background-color: rgb(0, 0, 0,0.6);
+        }
+
+
+        #temail, #tsenha {
+            text-align: center;
+        }
+
+
+        label {
+            color: gray;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="center">
+        <form action="">
+            <label for="temail">Email:  </label><input type="email" name="temail" id="temail" placeholder="Endereço de E-mail">
+            <br> <br><label for="tsenha">Senha: </label><input type="password" name="tsenha" id="tsenha" placeholder="Digite a Senha">
+            <br> <br><input type="submit" value="Entrar" onclick="Verificar()" id="entrar">
+        </form>
+    </div>
+</body>
+</html>
